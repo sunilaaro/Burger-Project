@@ -23,7 +23,9 @@ const ingredientControls = (props) =>(
               
               />
          ))}
-          <button className="OrderButton">ORDER NOW</button>
+          <button className="OrderButton" 
+            disabled={!props.purchaseble} onClick={props.ordered}>ORDER NOW
+          </button>
      </div>  
 );
 export default ingredientControls;
